@@ -26,13 +26,6 @@ class Wordset < Set
     return self
   end
 
-  # # override
-  # def partition filter
-  #   super do |i|
-  #     filter.decision i
-  #   end
-  # end
-
   def letter_frequency
     join.chars.tally
   end

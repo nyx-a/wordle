@@ -2,9 +2,9 @@
 require 'set'
 
 
-Pair = Struct.new :letter, :position do
+LetterWithPosition = Struct.new :letter, :position do
   def positive? word
-    word[@position] == @letter
+    word[position] == letter
   end
 
   def negative? word
@@ -12,7 +12,7 @@ Pair = Struct.new :letter, :position do
   end
 
   def near_miss? word
-    negative? and word.include? @letter
+    negative? word and word.include? letter
   end
 
   def to_s
@@ -31,23 +31,32 @@ class Filter
     @black  = Set.new
   end
 
-  def green! letter, pos
-    @green.add Pair.new letter, pos
+  def merge other
+    @green.merge  other.green
+    @yellow.merge other.yellow
+    @black.merge  other.black
     return self
   end
 
-  def yellow! letter, pos
-    @yellow.add Pair.new letter, pos
+  def add_green letter, pos
+    @green.add LetterWithPosition.new letter, pos
     return self
   end
 
-  def black! *letters
+  def add_yellow letter, pos
+    @yellow.add LetterWithPosition.new letter, pos
+    return self
+  end
+
+  def add_black *letters
     @black.replace @black + letters.join.chars
     return self
   end
 
   def pass? word
-    return false if word =~ /[#{@black.join}]/
+    unless @black.empty?
+      return false if word =~ /[#{@black.join}]/
+    end
     for g in @green
       return false if g.negative? word
     end
@@ -61,7 +70,7 @@ class Filter
     letters = @black.union @green.map(&:letter)#, @yellow.map(&:letter)
     idx = 0
     word.chars.map do |letter|
-      cursor = Pair.new letter, idx
+      cursor = LetterWithPosition.new letter, idx
       idx += 1
       case
       when letters.include?(letter) then 0
