@@ -236,7 +236,6 @@ advise
 adyton
 adytum
 aeacus
-aeaean
 aecial
 aecium
 aedile
@@ -346,7 +345,6 @@ aiglet
 aileen
 ailing
 ailuro
-aimara
 aimful
 aiming
 aimore
@@ -380,7 +378,6 @@ alaite
 alalus
 alanyl
 alares
-alaria
 alaric
 alarum
 alaska
@@ -781,7 +778,6 @@ aosmic
 aoudad
 apache
 apalit
-aparai
 apatan
 apathy
 apayao
@@ -851,14 +847,12 @@ arabit
 arable
 arains
 arales
-aralia
 aralie
 aramis
 aramus
 aranea
 aranga
 arango
-ararao
 arauan
 arauna
 arawak
@@ -891,7 +885,6 @@ ardent
 ardish
 areach
 areito
-arenae
 arenga
 arenig
 areola
@@ -929,7 +922,6 @@ arleng
 arline
 armada
 armado
-armata
 armful
 armida
 armied
@@ -1119,7 +1111,6 @@ atoner
 atonia
 atonic
 atopic
-atorai
 atossa
 atoxic
 atoxyl
@@ -2757,7 +2748,6 @@ carane
 caranx
 carapa
 carapo
-carara
 carbon
 carboy
 carbro
@@ -4504,7 +4494,6 @@ docker
 docket
 docmac
 doctor
-dodded
 dodder
 doddie
 doddle
@@ -4876,7 +4865,6 @@ ehuawa
 eident
 eighth
 eighty
-eileen
 eirene
 either
 ejecta
@@ -5080,7 +5068,6 @@ ensand
 ensate
 enseam
 enseat
-enseem
 enserf
 ensete
 ensign
@@ -7388,7 +7375,6 @@ inhaul
 inhere
 inhume
 iniome
-iniomi
 initis
 inject
 injure
@@ -7415,7 +7401,6 @@ innuit
 inodes
 inogen
 inosic
-inosin
 inower
 inport
 inpour
@@ -7523,7 +7508,6 @@ isabel
 isagon
 isaiah
 isaian
-isaria
 isatic
 isatin
 isatis
@@ -9009,7 +8993,6 @@ mapper
 maquis
 maraca
 marang
-marara
 maraud
 maravi
 marble
@@ -10023,7 +10006,6 @@ nonent
 nonfat
 nongas
 nongod
-nonion
 nonius
 nonnat
 nonoic
@@ -10137,7 +10119,6 @@ oaklet
 oakweb
 oannes
 oarage
-oarial
 oarium
 oarlop
 oarman
@@ -10301,7 +10282,6 @@ ongaro
 oniony
 onlepy
 onlook
-ononis
 onrush
 onside
 onward
@@ -10427,7 +10407,6 @@ ostrya
 ostyak
 oswald
 otalgy
-otaria
 otello
 othake
 otiant
@@ -14703,7 +14682,6 @@ taluto
 talwar
 tamale
 tamanu
-tamara
 tambac
 tamber
 tamboo
@@ -14781,7 +14759,6 @@ tarage
 tarand
 taraph
 tarasc
-tarata
 tarbet
 tarboy
 tardle
