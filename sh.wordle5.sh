@@ -1,1 +1,1 @@
-ruby solver.rb 5-letters.dict https://www.nytimes.com/games/wordle/index.html
+ruby solver.rb 5-letter-word-list.txt https://www.nytimes.com/games/wordle/index.html

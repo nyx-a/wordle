@@ -39,11 +39,15 @@ class Wordset < Set
                 word.chars.map{ frequency.fetch _1, 0 }
               end
       [word, score]
-    end.sort_by{ _1.last.sum }
+    end.sort_by(&:last)
+  end
+
+  def top_score filter=nil
+    order(filter).last
   end
 
   def im_feeling_lucky filter=nil
-    order(filter).last[0]
+    top_score[0]
   end
 end
 

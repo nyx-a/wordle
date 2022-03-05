@@ -47,6 +47,10 @@ class Row
     @tiles.all? &:invalid?
   end
 
+  def all? object
+    @tiles.all?{ _1.color == object }
+  end
+
   def count
     @tiles.count{ not _1.empty? }
   end

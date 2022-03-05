@@ -11,7 +11,7 @@ require_relative 'tile.rb'
 
 
 class Solver
-  attr_reader(*%i`whole subset filter driver`)
+  attr_reader :whole, :subset, :filter, :driver
 
   def initialize dictfile, url
     @dfile  = dictfile
@@ -29,7 +29,7 @@ class Solver
     game_modal.find_element(:css, 'div.close-icon').click
 
     # get rows
-    @row = game_app.find_elements(:tag_name, 'game-row').map &:shadow_root
+    @game_row = game_app.find_elements(:tag_name, 'game-row').map &:shadow_root
   end
 
   def enter word
@@ -81,26 +81,47 @@ class Solver
     @subset.im_feeling_lucky @filter
   end
 
+  def highest_score_word
+    [
+      @whole.top_score(@filter),
+      @subset.top_score(@filter),
+    ].max_by(&:last).first
+  end
+
+  def win?
+    matrix&.last&.all? :correct
+  end
+
+  def auto
+    while !@subset.empty? and !win? and matrix.size < @game_row.size
+      word = @subset.one? ? s : highest_score_word
+      puts "#{progress.inspect} #{word}"
+      submit word
+      sleep 0.5
+    end
+    #save
+  end
+
   def check row
     f = Filter.new
-    idx = 0
+    i = 0
     row.each do |t|
       case t.color
-      when :present then f.add_yellow t.letter, idx
-      when :correct then f.add_green t.letter, idx
-      when :absent  then f.add_black t.letter
+      when :correct then f.add_green  t.letter, i
+      when :present then f.add_yellow t.letter, i
+      when :absent  then f.add_black  t.letter, i
       else
         raise
       end
-      idx += 1
+      i += 1
     end
     @subset.filter!{ f.pass? _1 }
-    @filter.merge f
+    @filter.merge! f
     return self
   end
 
   def matrix
-    @row.map do |r|
+    @game_row.map do |r|
       arr = r.find_elements(:tag_name, 'game-tile').map do
         Tile.new(_1.attribute('letter'), _1.attribute('evaluation'))
       end
@@ -111,7 +132,7 @@ end
 
 
 if ARGV.size == 2
-  sol = Solver.new ARGV.shift, ARGV.shift
+  s = Solver.new ARGV.shift, ARGV.shift
   binding.irb
 else
   puts 'usage:'

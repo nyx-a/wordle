@@ -2,85 +2,138 @@
 require 'set'
 
 
-LetterWithPosition = Struct.new :letter, :position do
-  def positive? word
-    word[position] == letter
-  end
+# Count and Position
+class Cntpos
+  attr_reader :count, :capped, :bingo, :boo
 
-  def negative? word
-    not positive? word
-  end
-
-  def near_miss? word
-    negative? word and word.include? letter
-  end
-
-  def to_s
-    "#{letter}:#{position}"
-  end
-  alias :inspect :to_s
-end
-
-
-class Filter
-  attr_reader :green, :yellow, :black
-
-  def initialize
-    @green  = Set.new
-    @yellow = Set.new
-    @black  = Set.new
+  def initialize *args
+    @count  = args.shift || 0
+    @capped = args.shift || false
+    @bingo  = args.shift || Set.new
+    @boo    = args.shift || Set.new
   end
 
   def merge other
-    @green.merge  other.green
-    @yellow.merge other.yellow
-    @black.merge  other.black
-    return self
+    Cntpos.new(
+      [@count, other.count].max,
+      @capped || other.capped,
+      @bingo + other.bingo,
+      @boo + other.boo,
+    )
   end
 
-  def add_green letter, pos
-    @green.add LetterWithPosition.new letter, pos
-    return self
+  def merge! other
+    @count  = [@count, other.count].max
+    @capped = @capped || other.capped
+    @bingo.replace @bingo & other.bingo
+    @boo.replace @boo & other.boo
   end
 
-  def add_yellow letter, pos
-    @yellow.add LetterWithPosition.new letter, pos
-    return self
+  def clone
+    Cntpos.new @count, @capped, @bingo.clone, @boo.clone
   end
 
-  def add_black *letters
-    @black.replace @black + letters.join.chars
-    return self
+  def count_up
+    @count = @count + 1
   end
 
-  def pass? word
-    unless @black.empty?
-      return false if word =~ /[#{@black.join}]/
+  def count_stop
+    @capped = true
+  end
+
+  def here_it_is position
+    @bingo.add position
+  end
+
+  def not_here position
+    @boo.add position
+  end
+
+  def number_okay? word, letter
+    word.count(letter).send(@capped ? :== : :>=, @count || 0)
+  end
+
+  def position_okay? word, letter
+    if @bingo
+      if not @bingo.all?{ word[_1] == letter }
+        return false
+      end
     end
-    for g in @green
-      return false if g.negative? word
-    end
-    for y in @yellow
-      return false unless y.near_miss? word
+    if @boo
+      if not @boo.all?{ word[_1] != letter }
+        return false
+      end
     end
     return true
   end
 
+  def inspect
+    [
+      @capped ? 'Exactly' : 'At least',
+      @count,
+      'o=' + @bingo.join(','),
+      'x=' + @boo.join(','),
+    ].join(' ')
+  end
+end
+
+
+class Filter
+  attr_reader :key
+
+  def initialize
+    @key = Hash.new{ |h,k| h[k] = Cntpos.new } # { letter => Cntpos }
+  end
+
+  def merge! other
+    @key.merge! other.key do |l,a,b|
+      a.merge b
+    end
+  end
+
+  def add_green letter, position
+    @key[letter].count_up
+    @key[letter].here_it_is position
+    return self
+  end
+
+  def add_yellow letter, position
+    @key[letter].count_up
+    @key[letter].not_here position
+    return self
+  end
+
+  def add_black letter, position
+    @key[letter].count_stop
+    @key[letter].not_here position
+    return self
+  end
+
+  def pass? word
+    @key.all? do |l,cp|
+      cp.number_okay?(word, l) and cp.position_okay?(word, l)
+    end
+  end
+
   def novelty word, freq
-    letters = @black.union @green.map(&:letter)#, @yellow.map(&:letter)
-    idx = 0
-    word.chars.map do |letter|
-      cursor = LetterWithPosition.new letter, idx
-      idx += 1
-      case
-      when letters.include?(letter) then 0
-      #when  @black.include?(letter) then 0
-      #when  @green.include?(cursor) then 0
-      when @yellow.include?(cursor) then 0
+    score = 0
+    word.chars.each_with_index do |letter, idx|
+      cp = @key.fetch letter, nil
+      if cp
+        if cp.capped and cp.count < word.count(letter)
+          return -1
+        end
+        case idx
+        when cp.bingo, cp.boo
+          # No score addition.
+        else
+          score += freq[letter]
+        end
       else
-        freq[letter]
+        score += freq[letter]
       end
     end
+    return score
   end
 
   def inspect

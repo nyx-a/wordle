@@ -1737,7 +1737,6 @@ belial
 belick
 belief
 belier
-belili
 belion
 belite
 belive
@@ -2939,7 +2938,6 @@ celtic
 celtis
 cement
 cendre
-cenoby
 censer
 censor
 census
@@ -8435,7 +8433,6 @@ lentor
 lenvoi
 lenvoy
 leonid
-leonis
 lepcha
 lepric
 leptid
@@ -13206,7 +13203,6 @@ selena
 selene
 selfly
 selina
-selion
 seljuk
 sellar
 seller
@@ -16569,7 +16565,6 @@ venice
 venite
 vennel
 venner
-venomy
 venose
 venous
 venter
