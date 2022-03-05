@@ -99,7 +99,7 @@ class Solver
       submit word
       sleep 0.5
     end
-    #save
+    save
   end
 
   def check row
@@ -134,6 +134,7 @@ end
 if ARGV.size == 2
   s = Solver.new ARGV.shift, ARGV.shift
   binding.irb
+  # you can try `s.auto`
 else
   puts 'usage:'
   puts "  $ #{$0} Dictionary URL"

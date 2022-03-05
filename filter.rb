@@ -117,12 +117,14 @@ class Filter
 
   def novelty word, freq
     score = 0
+    for letter,cp in @key.select{ _2.capped }
+      if cp.count != word.count(letter)
+        return -1
+      end
+    end
     word.chars.each_with_index do |letter, idx|
       cp = @key.fetch letter, nil
       if cp
-        if cp.capped and cp.count < word.count(letter)
-          return -1
-        end
         case idx
         when cp.bingo, cp.boo
           # No score addition.
