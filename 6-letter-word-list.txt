@@ -782,7 +782,6 @@ apatan
 apathy
 apayao
 apedom
-apelet
 apepsy
 aperch
 aperea
@@ -952,7 +951,6 @@ arrest
 arriba
 arride
 arriet
-arrish
 arrive
 arroba
 arrope
@@ -2414,9 +2412,7 @@ buddhi
 buddle
 budger
 budget
-budlet
 buduma
-budzat
 buffed
 buffer
 buffet
@@ -2493,7 +2489,6 @@ burker
 burlap
 burled
 burler
-burlet
 burley
 burman
 burned
@@ -3065,7 +3060,6 @@ chegre
 chekan
 chelem
 chello
-chelys
 chemic
 chemis
 chende
@@ -3405,7 +3399,6 @@ coelin
 coelom
 coempt
 coerce
-coetus
 coeval
 cofane
 coffea
@@ -3637,7 +3630,6 @@ cotoin
 cotoro
 cotoxo
 cotset
-cotted
 cotter
 cottid
 cotton
@@ -3660,12 +3652,10 @@ couple
 coupon
 courap
 courge
-couril
 course
 cousin
 coutel
 couter
-coutet
 coutil
 couxia
 covado
@@ -4497,7 +4487,6 @@ doddie
 doddle
 dodger
 dodkin
-dodlet
 dodman
 dodona
 doesnt
@@ -6546,7 +6535,6 @@ guarri
 gubbin
 gudame
 guddle
-gudget
 guelph
 guemal
 guenon
@@ -7492,10 +7480,8 @@ irenic
 iridal
 irides
 iridic
-iridin
 irised
 irishy
-irisin
 iritic
 iritis
 ironer
@@ -7524,7 +7510,6 @@ isonym
 isopag
 isopod
 isotac
-israel
 issite
 issuer
 isthmi
@@ -9569,7 +9554,6 @@ mucago
 mucaro
 muchly
 mucker
-mucket
 muckle
 muckna
 mucksy
@@ -9580,7 +9564,6 @@ mucose
 mucous
 mucuna
 mudcap
-mudden
 muddle
 muermo
 muffed
@@ -9934,7 +9917,6 @@ nighly
 nights
 nignay
 nignye
-nigori
 nikeno
 nilgai
 nilous
@@ -11084,7 +11066,6 @@ pillas
 pilled
 pillet
 pillow
-pilori
 pilose
 pilous
 pilpai
@@ -14469,7 +14450,6 @@ sungha
 sunglo
 sunken
 sunket
-sunlet
 sunlit
 sunnud
 sunray
@@ -14711,7 +14691,6 @@ tangum
 tangun
 tangut
 tanica
-tanier
 tanist
 tanite
 tanjib
@@ -15248,7 +15227,6 @@ titbit
 tithal
 tither
 titian
-titien
 tities
 titled
 titler
@@ -15395,7 +15373,6 @@ touchy
 toufic
 tought
 toupee
-toupet
 tourer
 tourte
 touser
@@ -16115,7 +16092,6 @@ unsafe
 unsage
 unsaid
 unsalt
-unsane
 unsash
 unsawn
 unseal

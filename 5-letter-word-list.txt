@@ -844,7 +844,6 @@ crimp
 crisp
 crith
 croak
-croat
 crock
 croft
 crone
@@ -2276,7 +2275,6 @@ olden
 older
 olive
 ology
-omaha
 omani
 omega
 onion
