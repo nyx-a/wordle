@@ -116,6 +116,7 @@ class Filter
   end
 
   def novelty word, freq
+    freq = freq.clone
     score = 0
     for letter,cp in @key.select{ _2.capped }
       if cp.count != word.count(letter)
@@ -130,9 +131,11 @@ class Filter
           # No score addition.
         else
           score += freq[letter]
+          freq[letter] = 0
         end
       else
         score += freq[letter]
+        freq[letter] = 0
       end
     end
     return score
