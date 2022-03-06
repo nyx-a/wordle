@@ -54,7 +54,7 @@ class Solver
     end
   end
 
-  def submit word
+  def submit! word
     before = matrix.size
     enter word
     after = matrix.size
@@ -67,6 +67,11 @@ class Solver
       check matrix.last
     end
     return progress
+  end
+  alias :<< :submit!
+
+  def random!
+    submit! @subset.sample
   end
 
   def progress
@@ -96,7 +101,7 @@ class Solver
     while !@subset.empty? and !win? and matrix.size < @game_row.size
       word = @subset.one? ? s : highest_score_word
       puts "#{progress.inspect} #{word}"
-      submit word
+      submit! word
       sleep 0.5
     end
     save

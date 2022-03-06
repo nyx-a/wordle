@@ -49,6 +49,11 @@ class Wordset < Set
   def im_feeling_lucky filter=nil
     top_score[0]
   end
+
+  # As of Ruby 3.1.1, Set class doesn't have sample() method.
+  def sample
+    to_a.sample # crap
+  end
 end
 
 
