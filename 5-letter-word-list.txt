@@ -210,7 +210,6 @@ arhat
 ariel
 aries
 arise
-arius
 armed
 armet
 armor
@@ -506,7 +505,6 @@ bream
 breed
 brett
 breve
-brian
 briar
 bribe
 brick
@@ -1404,7 +1402,6 @@ ghost
 ghoul
 giant
 giddy
-giles
 gimel
 girth
 given
@@ -1423,7 +1420,6 @@ gleba
 glebe
 gleek
 gleet
-glenn
 glide
 glint
 gloam
@@ -1710,7 +1706,6 @@ irate
 irena
 irish
 irony
-isaac
 islam
 islet
 issue
@@ -2092,7 +2087,6 @@ misdo
 miser
 misty
 miter
-mitra
 mixed
 mixen
 mixer
@@ -2153,7 +2147,6 @@ muddy
 mudra
 mufti
 muggy
-mugil
 mulch
 mulct
 mummy
@@ -2716,7 +2709,6 @@ rowel
 rowen
 rower
 royal
-rubia
 ruble
 rubus
 ruddy
@@ -2796,7 +2788,6 @@ scene
 scent
 schwa
 scion
-scobs
 scoff
 scold
 scone
