@@ -79,27 +79,27 @@ class Solver
   end
 
   def w
-    @whole.im_feeling_lucky @filter
+    @whole.im_feeling_lucky
   end
 
   def s
-    @subset.im_feeling_lucky @filter
+    @subset.im_feeling_lucky
   end
 
-  def highest_score_word
-    [
-      @whole.top_score(@filter),
-      @subset.top_score(@filter),
-    ].max_by(&:last).first
-  end
+  # def highest_score_word
+  #   [
+  #     @whole.top_score,
+  #     @subset.top_score,
+  #   ].max_by(&:last).first
+  # end
 
   def win?
     matrix&.last&.all? :correct
   end
 
-  def auto
+  def auto!
     while !@subset.empty? and !win? and matrix.size < @game_row.size
-      word = @subset.one? ? s : highest_score_word
+      word = @subset.one? ? s : @subset.im_feeling_lucky
       puts "#{progress.inspect} #{word}"
       submit! word
       sleep 0.5
@@ -139,7 +139,7 @@ end
 if ARGV.size == 2
   s = Solver.new ARGV.shift, ARGV.shift
   binding.irb
-  # you can try `s.auto`
+  # you can try `s.auto!`
 else
   puts 'usage:'
   puts "  $ #{$0} Dictionary URL"

@@ -26,27 +26,34 @@ class Wordset < Set
     return self
   end
 
-  def letter_frequency
-    join.chars.tally
+  # { alphabet => Set(words) }
+  def classify_by_letter
+    alphabet = Hash.new{ _1[_2] = Set.new }
+    for word in self
+      for letter in word.chars.uniq
+        alphabet[letter].add word
+      end
+    end
+    return alphabet
   end
 
-  def order filter=nil
-    frequency = letter_frequency
+  # { word => linkage_score }
+  def linkage
+    common = classify_by_letter
     to_h do |word|
-      score = if filter
-                filter.novelty word, frequency
-              else
-                word.chars.map{ frequency.fetch _1, 0 }
-              end
-      [word, score]
-    end.sort_by(&:last)
+      [word, word.chars.uniq.map{ common[_1] }.inject(&:|).count]
+    end
   end
 
-  def top_score filter=nil
-    order(filter).last
+  def order
+    linkage.sort_by &:last
   end
 
-  def im_feeling_lucky filter=nil
+  def top_score
+    order.last
+  end
+
+  def im_feeling_lucky
     top_score[0]
   end
 

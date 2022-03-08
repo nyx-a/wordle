@@ -50,7 +50,7 @@ class Cntpos
   end
 
   def number_okay? word, letter
-    word.count(letter).send(@capped ? :== : :>=, @count || 0)
+    word.count(letter).send(@capped ? :== : :>=, @count)
   end
 
   def position_okay? word, letter
@@ -113,32 +113,6 @@ class Filter
     @key.all? do |l,cp|
       cp.number_okay?(word, l) and cp.position_okay?(word, l)
     end
-  end
-
-  def novelty word, freq
-    freq = freq.clone
-    score = 0
-    for letter,cp in @key.select{ _2.capped }
-      if cp.count != word.count(letter)
-        return -1
-      end
-    end
-    word.chars.each_with_index do |letter, idx|
-      cp = @key.fetch letter, nil
-      if cp
-        case idx
-        when cp.bingo, cp.boo
-          # No score addition.
-        else
-          score += freq[letter]
-          freq[letter] = 0
-        end
-      else
-        score += freq[letter]
-        freq[letter] = 0
-      end
-    end
-    return score
   end
 
   def inspect
