@@ -7084,7 +7084,6 @@ hyphal
 hyphen
 hypnos
 hypnum
-hypoid
 hyrcan
 hyssop
 iambic
@@ -9444,7 +9443,6 @@ mucaro
 muchly
 mucker
 muckle
-muckna
 mucksy
 mucluc
 mucoid
