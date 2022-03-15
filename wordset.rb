@@ -26,34 +26,22 @@ class Wordset < Set
     return self
   end
 
-  # { alphabet => Set(words) }
-  def classify_by_letter
-    alphabet = Hash.new{ _1[_2] = Set.new }
-    for word in self
-      for letter in word.chars.uniq
-        alphabet[letter].add word
-      end
+  def letter_score
+    full = self.size
+    half = full / 2.0
+    map{ _1.chars.uniq }.inject(&:+).tally.to_h do |letter,score|
+      [letter, half<score ? full-score : score ]
     end
-    return alphabet
   end
 
-  # { word => linkage_score }
-  def linkage c
+  def word_score ls
     to_h do |word|
-      [word, word.chars.uniq.map{ c[_1] }.inject(&:|).count]
+      [word, word.chars.uniq.map{ ls[_1] }.compact.sum ]
     end
   end
 
   def order target
-    linkage(target.classify_by_letter).sort_by &:last
-  end
-
-  def top_score(...)
-    order(...).last
-  end
-
-  def im_feeling_lucky(...)
-    order(...)[-1][0]
+    word_score(target.letter_score).sort_by &:last
   end
 
   # As of Ruby 3.1.1, Set class doesn't have sample() method.
