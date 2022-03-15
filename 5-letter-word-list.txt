@@ -208,7 +208,6 @@ argue
 argus
 arhat
 ariel
-aries
 arise
 armed
 armet
@@ -1719,7 +1718,6 @@ jaded
 jager
 jakes
 james
-janua
 janus
 japan
 jason
@@ -1970,7 +1968,6 @@ lymph
 lynch
 lyric
 lysis
-macao
 macaw
 macon
 macro
@@ -2223,7 +2220,6 @@ noddy
 nodus
 noise
 noisy
-nolle
 nomad
 nonce
 nones
@@ -3263,7 +3259,6 @@ tabid
 table
 taboo
 tabor
-tacca
 tacit
 tacky
 taffy

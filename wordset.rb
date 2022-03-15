@@ -38,23 +38,22 @@ class Wordset < Set
   end
 
   # { word => linkage_score }
-  def linkage
-    common = classify_by_letter
+  def linkage c
     to_h do |word|
-      [word, word.chars.uniq.map{ common[_1] }.inject(&:|).count]
+      [word, word.chars.uniq.map{ c[_1] }.inject(&:|).count]
     end
   end
 
-  def order
-    linkage.sort_by &:last
+  def order target
+    linkage(target.classify_by_letter).sort_by &:last
   end
 
-  def top_score
-    order.last
+  def top_score(...)
+    order(...).last
   end
 
-  def im_feeling_lucky
-    top_score[0]
+  def im_feeling_lucky(...)
+    order(...)[-1][0]
   end
 
   # As of Ruby 3.1.1, Set class doesn't have sample() method.

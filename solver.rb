@@ -14,6 +14,7 @@ class Solver
   attr_reader :whole, :subset, :filter, :driver
 
   def initialize dictfile, url
+    @tried  = Set.new ################ 安易な解決策
     @dfile  = dictfile
     @whole  = Wordset.new @dfile
     @subset = @whole.clone
@@ -70,42 +71,49 @@ class Solver
   end
   alias :<< :submit!
 
-  def random!
-    submit! @subset.sample
-  end
-
   def progress
     [@subset.size, @whole.size]
   end
-
-  def w
-    @whole.im_feeling_lucky
-  end
-
-  def s
-    @subset.im_feeling_lucky
-  end
-
-  # def highest_score_word
-  #   [
-  #     @whole.top_score,
-  #     @subset.top_score,
-  #   ].max_by(&:last).first
-  # end
 
   def win?
     matrix&.last&.all? :correct
   end
 
+  def remaining
+    @game_row.size - matrix.size
+  end
+
+  def foo
+    if @subset.one?
+      @subset.first
+    else
+      ow = @whole.order @subset
+      os = @subset.order @subset
+      ow.pop while @tried.include? ow.dig(-1,0)
+      os.pop while @tried.include? os.dig(-1,0)
+      [ow.last, os.last].max_by(&:last).first
+    end
+  end
+
   def auto!
-    while !@subset.empty? and !win? and matrix.size < @game_row.size
-      word = @subset.one? ? s : @subset.im_feeling_lucky
+    while !@subset.empty? and !win? and remaining.positive?
+      word = foo
       puts "#{progress.inspect} #{word}"
       submit! word
-      sleep 0.5
+      sleep 1
     end
-    save
+    progress
   end
+
+  def sample! n=1
+    while n.positive? and remaining.positive?
+      submit! @whole.sample
+      n -= 1
+      sleep 1 unless n.zero?
+    end
+    progress
+  end
+  alias :random! :sample!
 
   def check row
     f = Filter.new
@@ -122,6 +130,7 @@ class Solver
     end
     @subset.filter!{ f.pass? _1 }
     @filter.merge! f
+    @tried.add row.to_s
     return self
   end
 
@@ -140,6 +149,9 @@ if ARGV.size == 2
   s = Solver.new ARGV.shift, ARGV.shift
   binding.irb
   # you can try `s.auto!`
+  ObjectSpace.define_finalizer s do
+    s.save
+  end
 else
   puts 'usage:'
   puts "  $ #{$0} Dictionary URL"
