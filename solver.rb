@@ -6,15 +6,12 @@ require_relative 'wordset.rb'
 require_relative 'filter.rb'
 require_relative 'tile.rb'
 
-# https://www.nytimes.com/games/wordle/index.html
-# https://www.wordle2.in
-
 
 class Solver
   attr_reader :whole, :subset, :filter, :driver
 
   def initialize dictfile, url
-    @tried  = Set.new ################ 安易な解決策
+    @tried  = Set.new
     @dfile  = dictfile
     @whole  = Wordset.new @dfile
     @subset = @whole.clone
@@ -23,6 +20,9 @@ class Solver
     @driver = Selenium::WebDriver.for :chrome
     @driver.manage.timeouts.implicit_wait = 10
     @driver.navigate.to url
+
+    @driver.manage.window.resize_to 500, 800
+    @driver.manage.window.move_to   900, 50
 
     # click first x
     game_app = @driver.find_element(:tag_name, 'game-app').shadow_root
@@ -56,17 +56,24 @@ class Solver
   end
 
   def submit! word
+    puts "> #{word}"
+
     before = matrix.size
     enter word
     after = matrix.size
 
     if matrix.last.invalid? or before == after
       # It could be "Not enough letters"
-      p "Not in word list => #{word}"
+      puts %Q`! Not in word list "#{word}"`
       erase
     else
       check matrix.last
     end
+    puts [
+      ' ',
+      progress.join('/'),
+      (@subset.size < 12 ? "(#{@subset.join(' ')})" : ''),
+    ].join(' ')
     return progress
   end
   alias :<< :submit!
@@ -98,7 +105,6 @@ class Solver
   def auto!
     while !@subset.empty? and !win? and remaining.positive?
       word = foo
-      puts "#{progress.inspect} #{word}"
       submit! word
       sleep 1
     end
