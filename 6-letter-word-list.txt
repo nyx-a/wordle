@@ -3649,7 +3649,6 @@ crosby
 crosse
 crotal
 crotch
-crotin
 croton
 crotyl
 crouch
@@ -5551,7 +5550,6 @@ forane
 forbar
 forbid
 forbit
-forbow
 forced
 forcer
 forche
@@ -7037,7 +7035,6 @@ illeck
 illess
 illipe
 illish
-illium
 illude
 illume
 illupi
@@ -9590,7 +9587,6 @@ nepote
 nereid
 nereis
 nerine
-nerita
 nerium
 neroic
 nerval
@@ -10468,7 +10464,6 @@ paunch
 pauper
 pausal
 pauser
-pavage
 pavane
 pavier
 paving
@@ -16580,7 +16575,6 @@ wifely
 wifish
 wifock
 wigdom
-wigful
 wigged
 wiggen
 wigger
