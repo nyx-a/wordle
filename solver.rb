@@ -11,26 +11,39 @@ class Solver
   attr_reader :whole, :subset, :filter, :driver
 
   def initialize dictfile, url
-    @tried  = Set.new
     @dfile  = dictfile
     @whole  = Wordset.new @dfile
+    @url    = url
+    open
+  end
+
+  def open
+    @tried  = Set.new
     @subset = @whole.clone
     @filter = Filter.new
 
     @driver = Selenium::WebDriver.for :chrome
     @driver.manage.timeouts.implicit_wait = 10
-    @driver.navigate.to url
-
+    @driver.navigate.to @url
     @driver.manage.window.resize_to 500, 800
     @driver.manage.window.move_to   900, 50
-
     # click first x
     game_app = @driver.find_element(:tag_name, 'game-app').shadow_root
     game_modal = game_app.find_element(:tag_name, 'game-modal').shadow_root
     game_modal.find_element(:css, 'div.close-icon').click
-
     # get rows
     @game_row = game_app.find_elements(:tag_name, 'game-row').map &:shadow_root
+    return progress
+  end
+
+  def close
+    @driver.close
+  end
+
+  def reopen
+    close
+    sleep 0.3
+    open
   end
 
   def enter word
@@ -38,7 +51,7 @@ class Solver
   end
 
   def erase
-    word = matrix.last.to_s
+    word = matrix.last.map(&:letter).join
     @driver.action.send_keys([:backspace] * word.length).perform
     @whole.delete word
     @subset.delete word
@@ -62,7 +75,7 @@ class Solver
     enter word
     after = matrix.size
 
-    if matrix.last.invalid? or before == after
+    if matrix.last.all?(&:invalid?) or before == after
       # It could be "Not enough letters"
       puts %Q`! Not in word list "#{word}"`
       erase
@@ -72,7 +85,7 @@ class Solver
     puts [
       ' ',
       progress.join('/'),
-      (@subset.size < 12 ? "(#{@subset.join(' ')})" : ''),
+      (@subset.size <= 12 ? "(#{@subset.join(' ')})" : ''),
     ].join(' ')
     return progress
   end
@@ -83,14 +96,14 @@ class Solver
   end
 
   def win?
-    matrix&.last&.all? :correct
+    matrix&.last&.all?(&:green?)
   end
 
   def remaining
     @game_row.size - matrix.size
   end
 
-  def foo
+  def im_feeling_lucky
     if @subset.one?
       @subset.first
     else
@@ -104,8 +117,7 @@ class Solver
 
   def auto!
     while !@subset.empty? and !win? and remaining.positive?
-      word = foo
-      submit! word
+      submit! im_feeling_lucky
       sleep 1
     end
     progress
@@ -126,9 +138,9 @@ class Solver
     i = 0
     row.each do |t|
       case t.color
-      when :correct then f.add_green  t.letter, i
-      when :present then f.add_yellow t.letter, i
-      when :absent  then f.add_black  t.letter, i
+      when :green  then f.add_green  t.letter, i
+      when :yellow then f.add_yellow t.letter, i
+      when :black  then f.add_black  t.letter, i
       else
         raise
       end
@@ -145,7 +157,7 @@ class Solver
       arr = r.find_elements(:tag_name, 'game-tile').map do
         Tile.new(_1.attribute('letter'), _1.attribute('evaluation'))
       end
-      Row.new(arr).nillize
+      arr.all?(&:empty?) ? nil : arr
     end.compact
   end
 end

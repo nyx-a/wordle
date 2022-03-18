@@ -1980,7 +1980,6 @@ maine
 major
 maker
 malay
-maleo
 malto
 malus
 malva
@@ -2752,7 +2751,6 @@ saucy
 sauna
 saury
 saute
-sauve
 saved
 saver
 savor
@@ -3552,7 +3550,6 @@ usury
 utter
 uveal
 uvula
-uzbek
 vache
 vagal
 vagas

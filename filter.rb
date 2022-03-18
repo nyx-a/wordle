@@ -116,8 +116,8 @@ class Filter
   end
 
   def inspect
-    instance_variables.map do
-      "#{_1[1]}{#{instance_variable_get(_1).map(&:to_s).join(' ')}}"
+    @key.map do |l,cp|
+      "#{l}#{cp.inspect}"
     end.join ' '
   end
 end
