@@ -8,7 +8,7 @@ require_relative 'tile.rb'
 
 
 class Solver
-  attr_reader :whole, :subset, :filter, :driver
+  attr_reader :whole, :subset, :filter, :driver, :tried
 
   def initialize dictfile, url
     @dfile  = dictfile
@@ -148,7 +148,7 @@ class Solver
     end
     @subset.filter!{ f.pass? _1 }
     @filter.merge! f
-    @tried.add row.to_s
+    @tried.add row.map(&:letter).join
     return self
   end
 

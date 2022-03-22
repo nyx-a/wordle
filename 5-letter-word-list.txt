@@ -1129,7 +1129,6 @@ ephah
 ephor
 epoch
 epode
-epsom
 equal
 equip
 equus
@@ -1255,7 +1254,6 @@ flail
 flair
 flake
 flaky
-flamb
 flame
 flank
 flare
@@ -1722,7 +1720,6 @@ jazzy
 jelly
 jemmy
 jenny
-jerez
 jerky
 jerry
 jesus
@@ -2514,7 +2511,6 @@ pubic
 pubis
 pudgy
 puffy
-pulex
 pulpy
 pulse
 punch
@@ -2699,7 +2695,6 @@ royal
 ruble
 rubus
 ruddy
-rudge
 rugby
 ruler
 rumal
@@ -3373,7 +3368,6 @@ tinge
 tinny
 tipsy
 tired
-tirer
 titan
 titer
 tithe
