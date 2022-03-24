@@ -6,7 +6,6 @@ abasia
 abasic
 abater
 abatis
-abaton
 abator
 abatua
 abbacy
@@ -121,7 +120,6 @@ acinar
 acinic
 acinus
 ackman
-acknow
 acloud
 acmaea
 acmite
@@ -140,7 +138,6 @@ acorus
 acoupa
 acquit
 acracy
-acrawl
 acraze
 acreak
 acream
@@ -275,7 +272,6 @@ afreet
 afresh
 afridi
 afront
-afrown
 afshah
 afshar
 aftaba
@@ -288,7 +284,6 @@ agamid
 agaric
 agarum
 agatha
-agawam
 agazed
 agedly
 agency
@@ -803,7 +798,6 @@ aptera
 aptian
 aptote
 apulse
-aquage
 aquila
 aquose
 araban
@@ -1757,7 +1751,6 @@ beside
 besigh
 besing
 beslap
-beslow
 beslur
 besmut
 besnow
@@ -1847,7 +1840,6 @@ bicone
 bicorn
 bicron
 bidder
-bidens
 bident
 biding
 bieldy
@@ -2421,7 +2413,6 @@ butoxy
 butter
 buttle
 button
-butyne
 buzane
 buzzer
 buzzle
@@ -2951,7 +2942,6 @@ chicky
 chicle
 chicot
 chider
-chidra
 chield
 chigoe
 chihfu
@@ -3243,7 +3233,6 @@ coddle
 codens
 codger
 codify
-codist
 codium
 codman
 coecal
@@ -4118,7 +4107,6 @@ deuced
 deuton
 devall
 devast
-devata
 devest
 device
 devily
@@ -4204,7 +4192,6 @@ dimmer
 dimmet
 dimple
 dimply
-dinder
 dindle
 dinero
 dingar
@@ -4220,7 +4207,6 @@ diobol
 diodia
 diodon
 dioecy
-dionym
 diosma
 diotic
 dipala
@@ -4676,7 +4662,6 @@ elator
 elbert
 elbowy
 elcaja
-elchee
 eldest
 elding
 eldred
@@ -7129,7 +7114,6 @@ inpour
 inpush
 inring
 inroad
-inroll
 inrush
 insack
 insane
@@ -9171,7 +9155,6 @@ morula
 morule
 morvin
 mosaic
-moschi
 moscow
 mosker
 moslem
@@ -9288,7 +9271,6 @@ mushaa
 mushed
 musher
 mushla
-musico
 musily
 musing
 muskat
@@ -9568,7 +9550,6 @@ nignay
 nignye
 nikeno
 nilgai
-nilous
 nimbed
 nimble
 nimbly
@@ -9739,7 +9720,6 @@ nyroca
 oafish
 oakboy
 oaklet
-oakweb
 oannes
 oarage
 oarium
@@ -12866,7 +12846,6 @@ shalom
 shamal
 shaman
 shamba
-shambu
 shamed
 shamer
 shamim
@@ -13870,14 +13849,12 @@ stythe
 suable
 suably
 suaeda
-subact
 subage
 subaid
 subaud
 subdeb
 subdie
 subdue
-subfeu
 subfix
 subgit
 subiya
@@ -13971,7 +13948,6 @@ sunnud
 sunray
 sunset
 sunway
-suomic
 supari
 supawn
 superb
@@ -14070,7 +14046,6 @@ syntan
 syntax
 synura
 sypher
-syriac
 syrian
 syrinx
 syrtic
@@ -14120,7 +14095,6 @@ tahami
 taheen
 tahsil
 tahsin
-taiaha
 taigle
 taihoa
 tailed
@@ -14381,7 +14355,6 @@ telary
 teledu
 telega
 telegn
-telegu
 teleia
 telfer
 telial
@@ -15671,13 +15644,11 @@ upbeat
 upbelt
 upbend
 upbind
-upblow
 upboil
 upbolt
 upbray
 upbred
 upbrim
-upbrow
 upbuoy
 upburn
 upcall
@@ -15879,7 +15850,6 @@ utrubi
 uvalha
 uvella
 uveous
-uvitic
 uvulae
 uvular
 uzarin
@@ -15888,7 +15858,6 @@ vacant
 vacate
 vacona
 vacoua
-vacouf
 vacual
 vacuum
 vadose
@@ -16689,9 +16658,6 @@ yezidi
 yieldy
 yildun
 ynambu
-yochel
-yockel
-yogism
 yogist
 yoicks
 yojana
@@ -16802,13 +16768,4 @@ zygite
 zygoma
 zygose
 zygote
-zygous
 zymase
-zymite
-zymoid
-zymome
-zyrian
-zyryan
-zythem
-zythia
-zythum

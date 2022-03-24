@@ -1707,7 +1707,6 @@ ivory
 ixion
 jabot
 jacal
-jacob
 jaded
 jager
 jakes
@@ -2029,10 +2028,7 @@ mecca
 medal
 media
 medic
-medoc
 melee
-meles
-melia
 melic
 melon
 mercy
@@ -2386,7 +2382,6 @@ photo
 phyle
 physa
 piano
-picea
 pichi
 picot
 picul
