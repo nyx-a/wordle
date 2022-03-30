@@ -8,7 +8,8 @@ require_relative 'tile.rb'
 
 
 class Solver
-  attr_reader :whole, :subset, :filter, :driver, :tried
+  attr_reader   :whole, :subset, :filter, :driver, :tried
+  attr_accessor :flag # There is no point in considering encapsulation in Ruby.
 
   def initialize dictfile, url
     @dfile  = dictfile
@@ -30,7 +31,10 @@ class Solver
     # click first x
     game_app = @driver.find_element(:tag_name, 'game-app').shadow_root
     game_modal = game_app.find_element(:tag_name, 'game-modal').shadow_root
-    game_modal.find_element(:css, 'div.close-icon').click
+    close_icon = game_modal.find_element(:css, 'div.close-icon')
+    if close_icon.displayed?
+      close_icon.click
+    end
     # get rows
     @game_row = game_app.find_elements(:tag_name, 'game-row').map &:shadow_root
     return progress
@@ -55,15 +59,15 @@ class Solver
     @driver.action.send_keys([:backspace] * word.length).perform
     @whole.delete word
     @subset.delete word
-    @dflag = true
+    @flag = true
     word
   end
 
   def save
-    if @dflag
+    if @flag
       @whole.savefile @dfile
       puts %`Saved: "#{@dfile}"`
-      @dflag = false
+      @flag = false
       true
     end
   end

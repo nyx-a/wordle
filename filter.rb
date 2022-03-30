@@ -71,8 +71,9 @@ class Cntpos
     [
       @capped ? 'Exactly' : 'At least',
       @count,
-      'o=' + @bingo.join(','),
-      'x=' + @boo.join(','),
+      ',',
+      'Certainly=' + @bingo.sort.inspect,
+      'Never=' + @boo.sort.inspect,
     ].join(' ')
   end
 end
@@ -116,9 +117,8 @@ class Filter
   end
 
   def inspect
-    @key.map do |l,cp|
-      "#{l}#{cp.inspect}"
-    end.join ' '
+    s = @key.map { |l,cp| "#{l} #{cp.inspect}" }.join "\n"
+    ['{', s, '}'].join "\n"
   end
 end
 
