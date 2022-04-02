@@ -4,33 +4,26 @@ require 'set'
 
 # Count and Position
 class Cntpos
-  attr_reader :count, :capped, :bingo, :boo
+  attr_reader :count, :capped, :positive, :negative
 
   def initialize *args
-    @count  = args.shift || 0
-    @capped = args.shift || false
-    @bingo  = args.shift || Set.new
-    @boo    = args.shift || Set.new
+    @count    = args.shift || 0
+    @capped   = args.shift || false
+    @positive = args.shift || Set.new
+    @negative = args.shift || Set.new
   end
 
   def merge other
     Cntpos.new(
       [@count, other.count].max,
       @capped || other.capped,
-      @bingo + other.bingo,
-      @boo + other.boo,
+      @positive + other.positive,
+      @negative + other.negative,
     )
   end
 
-  def merge! other
-    @count  = [@count, other.count].max
-    @capped = @capped || other.capped
-    @bingo.replace @bingo & other.bingo
-    @boo.replace @boo & other.boo
-  end
-
   def clone
-    Cntpos.new @count, @capped, @bingo.clone, @boo.clone
+    Cntpos.new @count, @capped, @positive.clone, @negative.clone
   end
 
   def count_up
@@ -42,11 +35,11 @@ class Cntpos
   end
 
   def here_it_is position
-    @bingo.add position
+    @positive.add position
   end
 
   def not_here position
-    @boo.add position
+    @negative.add position
   end
 
   def number_okay? word, letter
@@ -54,13 +47,13 @@ class Cntpos
   end
 
   def position_okay? word, letter
-    if @bingo
-      if not @bingo.all?{ word[_1] == letter }
+    if @positive
+      if not @positive.all?{ word[_1] == letter }
         return false
       end
     end
-    if @boo
-      if not @boo.all?{ word[_1] != letter }
+    if @negative
+      if not @negative.all?{ word[_1] != letter }
         return false
       end
     end
@@ -72,8 +65,8 @@ class Cntpos
       @capped ? 'Exactly' : 'At least',
       @count,
       ',',
-      'Certainly=' + @bingo.sort.inspect,
-      'Never=' + @boo.sort.inspect,
+      'Certainly=' + @positive.sort.inspect,
+      'Never=' + @negative.sort.inspect,
     ].join(' ')
   end
 end
@@ -83,7 +76,12 @@ class Filter
   attr_reader :key
 
   def initialize
-    @key = Hash.new{ |h,k| h[k] = Cntpos.new } # { letter => Cntpos }
+    # { letter => Cntpos }
+    @key = Hash.new{ |h,k| h[k] = Cntpos.new }
+  end
+
+  def [] letter
+    @key.fetch letter
   end
 
   def merge! other
@@ -114,6 +112,10 @@ class Filter
     @key.all? do |l,cp|
       cp.number_okay?(word, l) and cp.position_okay?(word, l)
     end
+  end
+
+  def unknown
+    ('a'..'z').to_a - @key.keys
   end
 
   def inspect
