@@ -800,7 +800,6 @@ covey
 covin
 cower
 coyly
-coyol
 coypu
 cozen
 crack
@@ -1774,7 +1773,6 @@ ketch
 keyed
 khaki
 khaya
-khmer
 khoja
 kiack
 kiang
@@ -2268,7 +2266,6 @@ oriya
 ormer
 oryza
 osage
-oscan
 oscar
 osier
 other
@@ -3686,7 +3683,6 @@ withe
 withy
 witty
 wizen
-wolof
 woman
 woody
 wooer
@@ -3744,3 +3740,5 @@ zombi
 zonal
 zooid
 zoril
+epoxy
+fewer
