@@ -396,7 +396,6 @@ black
 blade
 blain
 blame
-blanc
 bland
 blank
 blare

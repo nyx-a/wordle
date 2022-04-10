@@ -22,11 +22,8 @@ abidal
 abider
 abilao
 abilla
-abipon
 abject
 abjure
-abkari
-abkhas
 ablach
 ablare
 ablate
@@ -37,7 +34,6 @@ ablins
 abloom
 ablude
 ablush
-abnaki
 aboard
 abobra
 abolla
@@ -54,7 +50,6 @@ abraum
 abrico
 abroad
 abroma
-abrook
 abrupt
 absent
 absmho
@@ -119,7 +114,6 @@ acidyl
 acinar
 acinic
 acinus
-ackman
 acloud
 acmaea
 acmite
@@ -139,17 +133,14 @@ acoupa
 acquit
 acracy
 acraze
-acreak
 acream
 acrita
 acrite
-acrook
 acrose
 across
 actaea
 actiad
 actian
-actify
 actine
 acting
 action
@@ -179,7 +170,6 @@ adelea
 adelia
 adenia
 adenyl
-adhaka
 adhere
 adiate
 adicea
@@ -341,14 +331,6 @@ aissor
 aition
 aizoon
 ajowan
-akania
-akaroa
-akawai
-akazga
-akcheh
-akeake
-akebia
-akhrot
 akimbo
 akonge
 alacha
@@ -547,7 +529,6 @@ amomis
 amomum
 amoral
 amores
-amoret
 amorua
 amotus
 amount
@@ -599,7 +580,6 @@ anarya
 anatox
 anatum
 anaxon
-anbury
 anchat
 anchor
 ancile
@@ -1130,7 +1110,6 @@ avidya
 avijja
 avikom
 avital
-avitic
 avives
 avocet
 avouch
@@ -1141,7 +1120,6 @@ avowry
 avoyer
 avshar
 avulse
-awadhi
 awaken
 awalim
 awaste
@@ -1223,7 +1201,6 @@ bafaro
 baffle
 bafyot
 bagani
-bagdad
 bagful
 bagged
 bagger
@@ -1264,7 +1241,6 @@ balata
 balawa
 balawu
 balboa
-balden
 balder
 baldie
 baldly
@@ -1300,7 +1276,6 @@ bamban
 bamboo
 bambos
 bamoth
-banaba
 banago
 banana
 banate
@@ -1313,7 +1288,6 @@ bander
 bandhu
 bandie
 bandit
-bandle
 bandog
 bandor
 banger
@@ -1488,7 +1462,6 @@ bebang
 bebite
 bebled
 beboss
-bebump
 bebusy
 becall
 becalm
@@ -1503,10 +1476,8 @@ beclaw
 beclog
 become
 becoom
-becost
 becram
 becuna
-becurl
 bedamn
 bedamp
 bedare
@@ -1613,7 +1584,6 @@ bejazz
 bekick
 beking
 bekiss
-beknit
 beknow
 belady
 belage
@@ -1650,7 +1620,6 @@ belton
 beluga
 belute
 bemail
-bemaim
 bemask
 bemata
 bemaul
@@ -1912,7 +1881,6 @@ blamer
 blanca
 blanch
 blanco
-blanda
 blanky
 blarny
 blashy
@@ -2181,7 +2149,6 @@ breezy
 bregma
 brehon
 brelaw
-bremia
 brenda
 breton
 brevet
@@ -2314,7 +2281,6 @@ bunted
 bunter
 bunton
 bunyah
-bunyip
 burble
 burbly
 burbot
@@ -2363,7 +2329,6 @@ busily
 busine
 busked
 busker
-busket
 buskin
 buskle
 busman
@@ -2824,7 +2789,6 @@ chalky
 chalon
 chalta
 chamal
-chamar
 chamma
 chamos
 champy
@@ -3003,7 +2967,6 @@ cibory
 cicada
 cicala
 cicely
-cicuta
 cigala
 cilice
 cilium
@@ -3051,7 +3014,6 @@ clammy
 clamor
 claque
 claret
-clarin
 clashy
 claspt
 classy
@@ -3083,7 +3045,6 @@ cleric
 clerid
 clerus
 cletch
-cleuch
 clever
 clevis
 cliack
@@ -3617,7 +3578,6 @@ cultus
 culver
 cumber
 cumbha
-cumbre
 cumene
 cumhal
 cummer
@@ -4991,7 +4951,6 @@ expose
 expugn
 exsect
 exsert
-exship
 extant
 extend
 extent
@@ -5033,7 +4992,6 @@ fagger
 fagine
 fagoty
 faille
-fainly
 faints
 fainty
 fairer
@@ -5315,13 +5273,11 @@ flewed
 flewit
 flexed
 flexor
-flicky
 flight
 flimsy
 flinch
 flingy
 flinty
-flioma
 flirty
 flisky
 flitch
@@ -5421,7 +5377,6 @@ forhow
 forint
 forked
 forker
-forlet
 formal
 format
 formed
@@ -5525,7 +5480,6 @@ frothi
 frothy
 frough
 frower
-frowny
 frowst
 frowze
 frowzy
@@ -5748,7 +5702,6 @@ gaulin
 gaunty
 gaupus
 gavall
-gaviae
 gavial
 gawcie
 gawney
@@ -5980,7 +5933,6 @@ gobbet
 gobbin
 gobble
 gobian
-gobiid
 goblet
 goblin
 gobony
@@ -5997,7 +5949,6 @@ godwin
 godwit
 goemot
 goetae
-goetia
 goetic
 goffer
 goffle
@@ -6016,7 +5967,6 @@ goldin
 golfer
 gollar
 gomari
-gombay
 gomlah
 gomuti
 goniac
@@ -6263,7 +6213,6 @@ gyroma
 gyrose
 gyrous
 habble
-habeas
 habena
 habile
 habnab
@@ -6576,7 +6525,6 @@ hinter
 hiodon
 hipped
 hippen
-hippia
 hippic
 hipple
 hirmos
@@ -6939,7 +6887,6 @@ indigo
 indite
 indium
 indole
-indone
 indoor
 indris
 induce
@@ -7020,7 +6967,6 @@ inseam
 insect
 inseer
 insert
-inship
 inshoe
 inside
 insist
@@ -7188,7 +7134,6 @@ jarbot
 jarfly
 jarful
 jargon
-jarool
 jarrah
 jarvey
 jarvis
@@ -7426,7 +7371,6 @@ kanuri
 kanwar
 kaolin
 karaka
-karamu
 karate
 karaya
 kareao
@@ -7975,7 +7919,6 @@ lepric
 leptid
 lepton
 leptus
-lerret
 lesath
 lesbia
 lesche
@@ -8117,7 +8060,6 @@ litten
 litter
 little
 lituus
-litvak
 liukiu
 livedo
 lively
@@ -8781,7 +8723,6 @@ mezcal
 miamia
 miasma
 micate
-michel
 micher
 mickey
 mickle
@@ -8848,7 +8789,6 @@ minoan
 minter
 minuet
 minute
-minyae
 minyan
 minyas
 mirach
@@ -9057,7 +8997,6 @@ mucaro
 muchly
 mucker
 muckle
-mucksy
 mucluc
 mucoid
 mucosa
@@ -9097,7 +9036,6 @@ mumper
 mundic
 mundil
 mundle
-mungey
 munich
 munity
 munsee
@@ -9339,7 +9277,6 @@ nerver
 nervid
 nervii
 neshly
-nesiot
 neskhi
 neslia
 nester
@@ -9536,7 +9473,6 @@ nudist
 nudity
 nuggar
 nugget
-nugify
 nullah
 number
 numble
@@ -9563,7 +9499,6 @@ nuzzer
 nuzzle
 nyanja
 nyanza
-nylast
 nympha
 nyroca
 oafish
@@ -9844,7 +9779,6 @@ ossian
 ossify
 ostara
 osteal
-ostein
 ostent
 ostial
 ostium
@@ -10245,7 +10179,6 @@ pedant
 pedary
 pedata
 pedate
-pedder
 peddle
 pedion
 pedlar
@@ -10256,12 +10189,10 @@ peeper
 peerie
 peerly
 peeved
-peever
 peewee
 pegall
 pegbox
 pegged
-pegger
 peggle
 peglet
 peguan
@@ -10276,7 +10207,6 @@ pelick
 pelike
 peliom
 pelite
-pellar
 pellas
 peller
 pellet
@@ -10469,7 +10399,6 @@ pierce
 pierid
 pierre
 pietas
-pieter
 pietic
 piffle
 pifine
@@ -10952,7 +10881,6 @@ puddly
 pudent
 pudsey
 pueblo
-puerer
 puffed
 puffer
 puffin
@@ -11196,7 +11124,6 @@ raisin
 rajeev
 rajesh
 rajput
-rakery
 rakhal
 rakily
 raking
@@ -11350,7 +11277,6 @@ rebias
 rebill
 rebind
 rebite
-reblot
 reblow
 reblue
 reboil
@@ -11411,8 +11337,6 @@ rectal
 rector
 rectum
 rectus
-recure
-recurl
 recuse
 redact
 redare
@@ -11451,7 +11375,6 @@ reeker
 reeled
 reeler
 reenge
-reeper
 reesle
 reesty
 reetam
@@ -11561,7 +11484,6 @@ reloan
 relock
 relook
 relose
-relove
 reluct
 relume
 remade
@@ -11747,7 +11669,6 @@ retook
 retool
 retort
 retoss
-retour
 retrad
 retral
 retree
@@ -11830,7 +11751,6 @@ ribbed
 ribber
 ribble
 ribbon
-ribhus
 riblet
 ribose
 riccia
@@ -12297,7 +12217,6 @@ satron
 sattle
 sattva
 satura
-saturn
 saucer
 sauger
 saulie
@@ -12449,7 +12368,6 @@ scrump
 scrunt
 scrush
 scruto
-scruze
 scryer
 scuddy
 scuffy
@@ -12994,7 +12912,6 @@ slabby
 slaggy
 slaker
 slangy
-slarth
 slashy
 slatch
 slater
@@ -13119,7 +13036,6 @@ sneest
 sneeze
 sneezy
 snelly
-snibel
 sniffy
 snifty
 sniper
@@ -13301,7 +13217,6 @@ spayad
 speary
 specie
 specks
-specky
 specus
 speech
 speedy
@@ -13376,7 +13291,6 @@ spread
 spreng
 sprent
 sprewl
-spried
 sprier
 spring
 sprink
@@ -13409,7 +13323,6 @@ squama
 squame
 square
 squark
-squary
 squash
 squawk
 squdge
@@ -13475,7 +13388,6 @@ staxis
 stayed
 stayer
 steady
-stealy
 steamy
 steely
 steepy
@@ -13611,7 +13523,6 @@ stroam
 strode
 stroke
 stroky
-strold
 stroll
 stroma
 stromb
@@ -13624,7 +13535,6 @@ stroth
 stroud
 stroup
 strove
-strowd
 strown
 struck
 struma
@@ -13667,7 +13577,6 @@ subdeb
 subdie
 subdue
 subfix
-subgit
 subiya
 subjee
 sublet
@@ -13701,7 +13610,6 @@ suerre
 suevic
 suffer
 suffix
-sufism
 sugamo
 sugary
 sugent
@@ -13806,7 +13714,6 @@ swarmy
 swarry
 swarth
 swarty
-swashy
 swatch
 swathe
 swathy
@@ -13814,7 +13721,6 @@ swatow
 swaver
 swayed
 swayer
-sweath
 sweaty
 swedge
 sweeny
@@ -13873,7 +13779,6 @@ tables
 tablet
 taboot
 tabour
-tabret
 tabriz
 tabula
 tabule
@@ -14017,7 +13922,6 @@ tarage
 tarand
 taraph
 tarasc
-tarbet
 tarboy
 tardle
 targer
@@ -14246,7 +14150,6 @@ tetryl
 tetter
 tettix
 teucer
-teucri
 teufit
 teuton
 teviss
@@ -15191,7 +15094,6 @@ unkill
 unkind
 unking
 unkink
-unkirk
 unkiss
 unkist
 unknew
@@ -15350,7 +15252,6 @@ unspin
 unspit
 unspot
 unspun
-unstar
 unstep
 unstop
 unstow
@@ -15359,7 +15260,6 @@ unsung
 unsunk
 unsure
 untack
-untall
 untame
 untaut
 unteam
@@ -15619,7 +15519,6 @@ usings
 uskara
 usself
 ussels
-ustion
 usuary
 usurer
 usward
@@ -15701,7 +15600,6 @@ vectis
 vector
 vedaic
 vedana
-vedika
 vedist
 veduis
 vegete
@@ -15713,7 +15611,6 @@ veined
 veiner
 velary
 velate
-velika
 vellon
 vellum
 velure
@@ -15773,7 +15670,6 @@ versus
 vertex
 vervel
 vervet
-veskit
 vespal
 vesper
 vespid
@@ -15792,14 +15688,12 @@ viator
 vibrio
 vicety
 vicine
-vickie
 victim
 victor
 vicuna
 viddui
 vidian
 vidual
-vielle
 vienna
 viewer
 viewly
@@ -15880,7 +15774,6 @@ volent
 volery
 volley
 volost
-volsci
 volume
 volupt
 voluta
@@ -16174,7 +16067,6 @@ wiener
 wienie
 wifely
 wifish
-wifock
 wigdom
 wigged
 wiggen
@@ -16242,7 +16134,6 @@ wished
 wisher
 wishly
 wisket
-wissel
 wistit
 witchy
 witess
