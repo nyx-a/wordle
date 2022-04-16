@@ -51,7 +51,7 @@ class Solver
   end
 
   def enter word
-    @driver.action.send_keys(word, :enter).perform
+    @driver.action.send_keys(word.to_s, :enter).perform
   end
 
   def erase

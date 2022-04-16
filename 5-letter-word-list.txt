@@ -168,9 +168,7 @@ annex
 annoy
 annul
 anode
-anser
 antic
-antum
 anvil
 aorta
 aotus
@@ -181,7 +179,6 @@ aphid
 aphis
 apian
 aping
-apios
 apish
 apium
 apnea
@@ -2906,7 +2903,6 @@ sisal
 sissy
 sitar
 sitta
-sivan
 sixth
 sixty
 sizar
@@ -2999,7 +2995,6 @@ soapy
 sober
 socle
 sodom
-sofia
 softy
 soggy
 solan
