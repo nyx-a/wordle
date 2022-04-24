@@ -1371,7 +1371,6 @@ gaunt
 gauss
 gauze
 gavel
-gavia
 gawky
 gayal
 gazer
@@ -1699,7 +1698,6 @@ islet
 issue
 ivied
 ivory
-ixion
 jabot
 jacal
 jaded
@@ -2424,7 +2422,6 @@ pleat
 plebe
 pliny
 ploce
-plomb
 pluck
 plumb
 plume
