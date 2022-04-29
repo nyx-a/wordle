@@ -1124,6 +1124,7 @@ ephah
 ephor
 epoch
 epode
+epoxy
 equal
 equip
 equus
@@ -1215,6 +1216,7 @@ fetid
 fetor
 fetus
 fever
+fewer
 fiber
 fichu
 ficus
@@ -2308,7 +2310,6 @@ pants
 papal
 papaw
 paper
-papio
 parch
 parer
 paris
@@ -3401,7 +3402,6 @@ trail
 train
 trait
 tramp
-trapa
 traps
 trash
 trave
@@ -3726,10 +3726,9 @@ zamia
 zapus
 zayin
 zebra
+zesty
 zloty
 zombi
 zonal
 zooid
 zoril
-epoxy
-fewer

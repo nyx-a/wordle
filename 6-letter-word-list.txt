@@ -188,7 +188,6 @@ adnoun
 adolph
 adonai
 adonia
-adonic
 adonin
 adonis
 adoral
@@ -1196,7 +1195,6 @@ bagnio
 bagnut
 bagobo
 bagwig
-bagwyn
 bahama
 bahera
 bahima
@@ -1945,7 +1943,6 @@ boglet
 bogman
 bogong
 bogota
-bogway
 bohawn
 bohunk
 boidae
@@ -2017,7 +2014,6 @@ bordel
 border
 boread
 boreal
-borean
 boreas
 boreen
 borele
@@ -2053,7 +2049,6 @@ bother
 botong
 bottle
 bottom
-bouche
 bougar
 bought
 boughy
@@ -2560,7 +2555,6 @@ carnal
 carney
 caroba
 caroid
-carole
 caroli
 carone
 caroon
@@ -4355,7 +4349,6 @@ dumose
 dumper
 dumple
 duncan
-dungan
 dunger
 dungol
 dungon
@@ -4483,7 +4476,6 @@ egoity
 egoize
 egress
 ehlite
-ehuawa
 eident
 eighth
 eighty
@@ -5040,7 +5032,6 @@ feodal
 feower
 ferash
 ferfet
-fergus
 ferial
 ferine
 ferity
@@ -5283,13 +5274,11 @@ fonduk
 fontal
 fonted
 fooder
-fooner
 footed
 footer
 footle
 foozle
 forage
-forane
 forbar
 forbid
 forbit
@@ -5322,7 +5311,6 @@ formyl
 fornax
 fornix
 forpet
-forpit
 forrad
 forrit
 forrue
@@ -5360,7 +5348,6 @@ franco
 frangi
 franzy
 frappe
-frasco
 fratch
 frater
 fratry
@@ -5593,7 +5580,6 @@ garden
 garget
 gargle
 gargol
-garial
 gariba
 garish
 garlic
@@ -6016,7 +6002,6 @@ grocer
 groggy
 gromia
 groomy
-groose
 grooty
 groove
 groovy
@@ -6276,7 +6261,6 @@ hatpin
 hatred
 hatted
 hatter
-hattic
 hattie
 hauler
 haulmy
@@ -6874,7 +6858,6 @@ inodes
 inogen
 inosic
 inower
-inport
 inpour
 inring
 inroad
@@ -7225,7 +7208,6 @@ jupati
 jurane
 jurant
 jurara
-juring
 jurist
 jussel
 justen
@@ -7995,7 +7977,6 @@ lobata
 lobate
 lobber
 lobfig
-lobing
 lobola
 lobosa
 lobose
@@ -8019,7 +8000,6 @@ loggat
 logged
 logger
 loggia
-loggin
 logion
 logium
 loglet
@@ -8046,7 +8026,6 @@ longan
 longer
 longly
 longue
-lonhyn
 lontar
 loofah
 loofie
@@ -9219,7 +9198,6 @@ nickey
 nickie
 nickle
 nicolo
-nidana
 niddle
 nidget
 nidify
@@ -9766,7 +9744,6 @@ owenia
 owerby
 owldom
 owlery
-owling
 owlish
 owlism
 oxacid
@@ -10995,7 +10972,6 @@ raider
 railer
 railly
 rainer
-raioid
 raised
 raiser
 raisin
@@ -11656,7 +11632,6 @@ rigger
 riggot
 righto
 righty
-rignum
 rikari
 riksha
 rilawa
@@ -11805,14 +11780,11 @@ rouser
 router
 routhy
 roving
-rowena
 rowing
 rowlet
 rowley
 roxana
-roxane
 royale
-royena
 rubato
 rubbed
 rubber
@@ -11872,7 +11844,6 @@ runnel
 runner
 runoff
 runout
-runrig
 runted
 runtee
 runway
@@ -12452,9 +12423,7 @@ shakta
 shakti
 shallu
 shalom
-shamal
 shaman
-shamba
 shamed
 shamer
 shamim
@@ -13431,7 +13400,6 @@ stythe
 suable
 suably
 suaeda
-subage
 subaid
 subdeb
 subdie
@@ -14342,7 +14310,6 @@ torero
 torfel
 torgot
 tormen
-tornal
 torney
 tornit
 tornus
@@ -14355,7 +14322,6 @@ torque
 torrid
 torsel
 torula
-torvid
 tosher
 toshly
 tosily
@@ -14598,7 +14564,6 @@ turbeh
 turbid
 turbit
 turbot
-turcic
 turdus
 tureen
 turfed
@@ -15023,7 +14988,6 @@ unrest
 unrich
 unride
 unrife
-unring
 unripe
 unrobe
 unroll
@@ -15317,7 +15281,6 @@ urinal
 urling
 urluch
 urnful
-urning
 urnism
 uronic
 uropod
@@ -15606,7 +15569,6 @@ vomito
 voodoo
 vorago
 vorant
-vorpal
 vortex
 votary
 voteen
@@ -15886,7 +15848,6 @@ wiener
 wienie
 wifely
 wifish
-wigdom
 wigged
 wiggen
 wigger
@@ -16005,7 +15966,6 @@ wooled
 woolen
 wooler
 woolly
-woolwa
 woozle
 worble
 worded
@@ -16019,7 +15979,6 @@ wormed
 wormer
 wormil
 wornil
-worral
 worrit
 worsen
 worser
@@ -16045,7 +16004,6 @@ writee
 writer
 writhe
 wroken
-wrothy
 wuddie
 wumble
 wungee
@@ -16210,7 +16168,6 @@ zither
 zoacum
 zoaria
 zodiac
-zoetic
 zombie
 zonary
 zonate
