@@ -21,7 +21,7 @@ class Wordset < Set
 
   def savefile path
     open(path, 'w') do |fo|
-      fo.puts join "\n"
+      fo.puts sort.join "\n"
     end
     return self
   end
