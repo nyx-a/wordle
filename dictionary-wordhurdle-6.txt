@@ -168,7 +168,6 @@ adenia
 adenyl
 adhere
 adiate
-adicea
 adieux
 adigei
 adighe
@@ -293,7 +292,6 @@ agouti
 agreed
 agreer
 agrege
-agrise
 agrito
 agroan
 agroof
@@ -377,7 +375,6 @@ alfirk
 alfred
 alfuro
 algate
-algedi
 algedo
 algine
 algist
@@ -448,7 +445,6 @@ altair
 altern
 althea
 altica
-altoun
 aludel
 aludra
 alular
@@ -493,7 +489,6 @@ amelia
 amelus
 amende
 amends
-amenia
 amerce
 amgarn
 amhran
@@ -519,7 +514,6 @@ amnion
 amober
 amoeba
 amomis
-amomum
 amoral
 amores
 amorua
@@ -557,7 +551,6 @@ anacid
 anadem
 anagap
 anagep
-anagua
 anahau
 anakes
 analav
@@ -653,7 +646,6 @@ anoint
 anonol
 anonym
 anopia
-anopla
 anorak
 anorth
 anosia
@@ -664,7 +656,6 @@ anoxia
 anoxic
 ansate
 anseis
-anselm
 answer
 antara
 antdom
@@ -1261,7 +1252,6 @@ bambos
 bamoth
 banago
 banana
-banate
 bancal
 banchi
 bancus
@@ -1450,7 +1440,6 @@ becard
 becher
 becker
 becket
-beckie
 beckon
 beclad
 beclaw
@@ -1458,9 +1447,7 @@ beclog
 become
 becoom
 becram
-becuna
 bedamn
-bedamp
 bedare
 bedark
 bedash
@@ -1716,7 +1703,6 @@ beulah
 beveil
 beveto
 bewail
-bewall
 beware
 bewash
 beweep
@@ -2807,7 +2793,6 @@ chekan
 chello
 chemic
 chemis
-chende
 cheney
 cheque
 cherem
@@ -2988,7 +2973,6 @@ clavis
 clavus
 clawed
 clawer
-clayer
 clayey
 cleach
 cleave
@@ -3817,7 +3801,6 @@ decess
 decian
 decide
 decile
-decima
 decius
 decked
 deckel
@@ -4001,7 +3984,6 @@ dibase
 dibber
 dibble
 dibbuk
-dibrom
 dicast
 diccon
 dicing
@@ -4034,7 +4016,6 @@ dilker
 dillue
 dilogy
 dilute
-dimber
 dimble
 dimera
 dimiss
@@ -4383,7 +4364,6 @@ dusken
 dustee
 duster
 dustin
-dutchy
 dutied
 duyker
 dwarfy
@@ -4721,7 +4701,6 @@ epocha
 epodic
 eponym
 epopee
-equant
 equate
 equine
 equity
@@ -4732,7 +4711,6 @@ erbium
 eremic
 erenow
 ergane
-ericad
 erical
 ermine
 ernest
@@ -4973,7 +4951,6 @@ fastus
 father
 fathom
 fatiha
-fatima
 fatsia
 fatten
 fatter
@@ -5065,7 +5042,6 @@ fiance
 fianna
 fiasco
 fibber
-fibdom
 fibril
 fibrin
 fibula
@@ -5331,7 +5307,6 @@ foully
 fourer
 fourre
 fourth
-foussa
 fouter
 foveal
 fowler
@@ -5341,7 +5316,6 @@ foxing
 fracas
 frache
 fraise
-framea
 framed
 framer
 franco
@@ -5417,7 +5391,6 @@ fuerte
 fugler
 fulgid
 fulgor
-fulgur
 fulham
 fulica
 fullam
@@ -6248,7 +6221,6 @@ hartal
 hartin
 harvey
 hashab
-hasher
 haslet
 hassar
 hassel
@@ -6324,7 +6296,6 @@ height
 heikum
 heimin
 heinie
-hejazi
 helbeh
 helder
 helena
@@ -6452,7 +6423,6 @@ hoaxer
 hobber
 hobbil
 hobble
-hobbly
 hobnob
 hocker
 hocket
@@ -6677,7 +6647,6 @@ idalia
 ideaed
 ideate
 ideist
-idiasm
 idiocy
 iditol
 idlety
@@ -6899,7 +6868,6 @@ inulin
 inured
 invade
 inveil
-invein
 invent
 invert
 invest
@@ -6969,7 +6937,6 @@ issite
 issuer
 isthmi
 istoke
-isuret
 isurus
 iswara
 italic
@@ -7278,7 +7245,6 @@ kaross
 karree
 karroo
 karsha
-kartel
 kartos
 karwar
 karyon
@@ -7327,7 +7293,6 @@ keltoi
 kelvin
 kemple
 kendir
-kendyr
 kennel
 kenner
 kentia
@@ -7489,7 +7454,6 @@ korona
 korova
 korrel
 koruna
-koryak
 korzec
 kosher
 kosimo
@@ -7824,7 +7788,6 @@ lessor
 lester
 letchy
 lethal
-letoff
 letten
 letter
 lettic
@@ -8322,7 +8285,6 @@ mantzu
 manual
 manuao
 manuel
-manuka
 manuma
 manure
 manway
@@ -8378,7 +8340,6 @@ marrot
 marrow
 marsha
 marshy
-martel
 marten
 martes
 martha
@@ -8818,7 +8779,6 @@ morgen
 morgue
 morion
 morkin
-morlop
 mormon
 mormyr
 morned
@@ -9061,7 +9021,6 @@ napery
 napkin
 napped
 napper
-napron
 nardoo
 nardus
 naresh
@@ -9198,7 +9157,6 @@ nickey
 nickie
 nickle
 nicolo
-niddle
 nidget
 nidify
 niding
@@ -9469,7 +9427,6 @@ ogboni
 ogdoad
 ogdoas
 ogival
-ogived
 oglala
 ogress
 ogrish
@@ -9531,7 +9488,6 @@ oneism
 oneyer
 onfall
 onflow
-ongaro
 oniony
 onlepy
 onlook
@@ -9587,7 +9543,6 @@ orally
 orange
 orator
 orbite
-orblet
 orcein
 orchat
 orchel
@@ -9849,7 +9804,6 @@ pament
 pamiri
 pampas
 pamper
-pampre
 panace
 panada
 panade
@@ -10043,7 +9997,6 @@ pedary
 pedata
 pedate
 peddle
-pedion
 pedlar
 peeled
 peeler
@@ -10257,7 +10210,6 @@ piemag
 pieman
 piepan
 pierce
-pierid
 pierre
 pietas
 pietic
@@ -10617,7 +10569,6 @@ praise
 prajna
 prance
 prancy
-pranky
 pratal
 pratap
 prater
@@ -10919,6 +10870,7 @@ quotee
 quoter
 quotha
 quotum
+qwerty
 raanan
 raband
 rabbet
@@ -11069,7 +11021,6 @@ rasper
 rassle
 raster
 rastik
-rastle
 rastus
 rasure
 rathed
@@ -11257,7 +11208,6 @@ reform
 refuel
 refuge
 refund
-refurl
 refuse
 refute
 regain
@@ -11496,7 +11446,6 @@ retack
 retail
 retain
 retake
-retalk
 retama
 retame
 retape
@@ -11538,7 +11487,6 @@ reurge
 revamp
 revary
 reveal
-reveil
 revend
 revent
 reverb
@@ -11573,7 +11521,6 @@ rework
 rewove
 rewrap
 reyoke
-rhagon
 rhapis
 rhason
 rhebok
@@ -11829,7 +11776,6 @@ rumbly
 rumkin
 rummer
 rumney
-rumpad
 rumper
 rumple
 rumply
@@ -11955,7 +11901,6 @@ salter
 saltly
 saltus
 saluki
-salung
 salute
 salver
 salvia
@@ -12146,7 +12091,6 @@ scious
 sclaff
 sclera
 sclere
-scliff
 sclimb
 scobby
 scolex
@@ -13303,7 +13247,6 @@ stover
 stowce
 stower
 strack
-stract
 strade
 strafe
 straik
@@ -13422,7 +13365,6 @@ suburb
 subway
 succin
 succor
-succub
 suchos
 sucken
 sucker
@@ -13442,8 +13384,6 @@ sugary
 sugent
 suidae
 suitor
-sulaba
-sulaib
 sulcal
 sulcar
 sulcus
@@ -13459,7 +13399,6 @@ sultry
 suluan
 sulung
 sumass
-sumbul
 sumdum
 summar
 summed
@@ -13771,7 +13710,6 @@ tarsus
 tartan
 tartar
 tarten
-tartle
 tartly
 taruma
 tarvia
@@ -13882,7 +13820,6 @@ teioid
 tekiah
 tekken
 telang
-telary
 teledu
 telega
 telegn
@@ -13923,7 +13860,6 @@ tepefy
 terbia
 terbic
 tercel
-tercer
 tercet
 tercia
 tercio
@@ -14085,7 +14021,6 @@ thyine
 thymic
 thymol
 thymus
-thymyl
 thyris
 thyrse
 thysel
@@ -14219,7 +14154,6 @@ toader
 toasty
 toatoa
 tobiah
-tobias
 tobine
 tocher
 tocome
@@ -14420,7 +14354,6 @@ trigla
 trigly
 trigon
 trigyn
-triker
 trikir
 trilby
 trilit
@@ -14567,11 +14500,9 @@ turbot
 turdus
 tureen
 turfed
-turfen
 turgid
 turgor
 turion
-turken
 turkey
 turkis
 turkle
@@ -14632,7 +14563,6 @@ twiner
 twinge
 twinly
 twirly
-twisel
 twisty
 twitch
 twitty
@@ -14823,7 +14753,6 @@ unfret
 unfull
 unfurl
 ungain
-ungaro
 ungelt
 ungild
 ungill
@@ -15320,7 +15249,6 @@ uveous
 uvulae
 uvular
 uzarin
-uzaron
 vacant
 vacate
 vacona
@@ -15426,7 +15354,6 @@ venule
 venust
 verbal
 verbid
-verdea
 verdet
 verdin
 verdoy
@@ -15532,7 +15459,6 @@ visive
 vistal
 visual
 vitals
-vitium
 vitric
 vivary
 vively
@@ -16070,7 +15996,6 @@ yellow
 yelmer
 yelper
 yemeni
-yender
 yenite
 yeoman
 yerava
@@ -16122,7 +16047,6 @@ zaffar
 zaffer
 zafree
 zagged
-zaitha
 zakkeu
 zamang
 zambal
@@ -16158,7 +16082,6 @@ zincic
 zincke
 zincky
 zincum
-zingel
 zinnia
 zinzar
 zipper

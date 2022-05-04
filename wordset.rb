@@ -40,8 +40,12 @@ class Wordset < Set
     end
   end
 
-  def order target
-    word_score(target.letter_score).sort_by &:last
+  def order_by_score target
+    word_score(target.letter_score).sort_by(&:last).map &:first
+  end
+
+  def best_word target
+    word_score(target.letter_score).max_by(&:last).first
   end
 
   # As of Ruby 3.1.1, Set class doesn't have sample() method.

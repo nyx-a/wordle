@@ -171,7 +171,6 @@ anode
 antic
 anvil
 aorta
-aotus
 apace
 apart
 apery
@@ -577,7 +576,6 @@ caeca
 cagey
 cahot
 cairn
-cairo
 cajun
 calla
 calve
@@ -674,7 +672,6 @@ chino
 chips
 chirp
 chirr
-chloe
 chock
 choir
 choke
@@ -935,7 +932,6 @@ deuce
 devil
 devon
 dewan
-dewey
 dhobi
 dhole
 dhoti
@@ -982,7 +978,6 @@ doily
 doing
 dolly
 dolor
-donar
 donee
 donna
 donne
@@ -1127,7 +1122,6 @@ epode
 epoxy
 equal
 equip
-equus
 erase
 erect
 ergot
@@ -1135,7 +1129,6 @@ erica
 erode
 erose
 error
-eruca
 essay
 ester
 estop
@@ -1296,6 +1289,7 @@ foots
 foray
 force
 forge
+forgo
 forte
 forth
 forty
@@ -1821,8 +1815,6 @@ lapse
 larch
 large
 largo
-larid
-larix
 larus
 larva
 laser
@@ -1948,7 +1940,6 @@ lurch
 lurid
 lushy
 lusty
-lutra
 lying
 lymph
 lynch
@@ -2096,7 +2087,6 @@ moral
 moray
 morel
 mores
-mormo
 morse
 morus
 moses
@@ -2541,7 +2531,6 @@ quill
 quilt
 quint
 quipu
-quira
 quire
 quirk
 quirt
@@ -3186,7 +3175,6 @@ sunup
 super
 surge
 surly
-surya
 swain
 swale
 swami
@@ -3362,7 +3350,6 @@ toady
 toast
 today
 toddy
-todea
 todus
 toity
 tokay

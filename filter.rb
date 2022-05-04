@@ -102,9 +102,8 @@ class Filter
     return self
   end
 
-  def add_black letter, position
+  def add_black letter
     @key[letter].count_stop
-    @key[letter].not_here position
     return self
   end
 
