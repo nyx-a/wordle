@@ -118,13 +118,10 @@ end
 
 #---
 
-if ARGV.size == 1
-  s = Wordle.new ARGV.first
+if __FILE__ == $0
+  d = ARGV.empty? ? File.basename($0, '.*') + '.dic' : ARGV.first
+  s = Wordle.new d
   binding.irb
   # you can try `s.auto!`
-else
-  puts 'usage:'
-  puts "  $ #{$0} (dictionary file)"
-  puts
 end
 

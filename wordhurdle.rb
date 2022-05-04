@@ -3,7 +3,7 @@
 require_relative 'solver.rb'
 require 'webdrivers/chromedriver'
 
-class Wordle
+class WordHurdle
   attr_reader :driver, :url, :solver
 
   def initialize path, url='https://solitaired.com/wordhurdle'
@@ -123,13 +123,10 @@ end
 
 #---
 
-if ARGV.size == 1
-  s = Wordle.new ARGV.first
+if __FILE__ == $0
+  d = ARGV.empty? ? File.basename($0, '.*') + '.dic' : ARGV.first
+  s = WordHurdle.new d
   binding.irb
   # you can try `s.auto!`
-else
-  puts 'usage:'
-  puts "  $ #{$0} (dictionary file)"
-  puts
 end
 
