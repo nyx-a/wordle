@@ -1,7 +1,6 @@
 
 require 'set'
 
-
 class Wordset < Set
   def initialize something=nil
     if something.respond_to? :each
@@ -50,13 +49,31 @@ class Wordset < Set
 
   # As of Ruby 3.1.1, Set class doesn't have sample() method.
   def sample
-    to_a.sample # crap
+    drop(rand(0...size)).first
   end
-end
 
+  def anagram_list
+    group_by{ _1.chars.sort }.select{ _2.size > 1 }.values
+  end
 
-if __FILE__ == $0
-  w = Wordset.new ARGV.shift
-  binding.irb
+  def angrm_list
+    group_by{ _1.chars.uniq.sort }.select{ _2.size > 1 }.values
+  end
+
+  def anagram_of word
+    letters = word.to_s.chars.sort
+    select{ letters == _1.chars.sort } - [ word ]
+  end
+
+  def angrm_of word
+    letters = Set.new word.to_s.chars
+    select{ letters == Set.new(_1.chars) } - [ word ]
+  end
+
+  # letter subset
+  def aaggmm_of word
+    letters = Set.new word.to_s.chars
+    select{ Set.new(_1.chars).subset? letters } - [ word ]
+  end
 end
 

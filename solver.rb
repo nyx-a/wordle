@@ -81,6 +81,10 @@ class Solver
 
   #- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  def give_up?
+    @subset.empty?
+  end
+
   def progress
     [@subset.size, @whole.size]
   end

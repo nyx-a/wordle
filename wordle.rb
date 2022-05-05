@@ -44,6 +44,7 @@ class Wordle
     close
     sleep 0.3
     open
+    @solver.reset
   end
 
   #- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -57,6 +58,7 @@ class Wordle
   end
 
   def submit! word
+    return nil unless alive?
     word = word.to_s
     puts "> #{word}"
 
@@ -66,7 +68,7 @@ class Wordle
 
     if matrix.last.all?(&:invalid?) or before == after
       # It could be "Not enough letters"
-      puts %Q`! Not in word list "#{word}"`
+      puts %Q`! Not in word list: #{word.inspect}`
       backspace word.length
       @solver.delete_from_dictionary word
       false
@@ -87,8 +89,12 @@ class Wordle
     @game_row.size - matrix.size
   end
 
+  def alive?
+    !win? and remaining.positive?
+  end
+
   def auto!
-    while !@solver.subset.empty? and !win? and remaining.positive?
+    while !@solver.give_up? and alive?
       submit! @solver.answer
       sleep 1
     end
@@ -97,8 +103,9 @@ class Wordle
 
   def sample! n=1
     while n.positive? and remaining.positive?
-      if submit! @solver.whole.sample
-        n -= 1
+      case submit! @solver.whole.sample
+      when nil then break
+      when true then n -= 1
       end
       sleep 1 unless n.zero?
     end
