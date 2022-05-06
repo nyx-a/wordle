@@ -20,6 +20,20 @@ end
 
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+def sort_vk hash
+  hash.sort_by{ |k,v| [v,k] }.to_h # ソート済みハッシュという矛盾
+end
+
+def text_bar_chart array, width=50
+  aoa = array.tally.sort_by &:first         # array of array
+  mll = aoa.map{ _1[0].inspect.length }.max # max label length
+  ma  = Float aoa.map{ _1[1] }.max          # max amount
+  aoa.map do |label,amount|
+    bar_length = (amount / ma * width).round
+    "%#{mll}s | #{'*' * bar_length} (%d)" % [label.inspect, amount]
+  end.join "\n"
+end
+
 def colorize array_of_tiles
   array_of_tiles.map(&:to_s).join
 end
@@ -86,20 +100,21 @@ if option[:t]
   if option[:a]
     anagram = solver.whole.anagram_of option[:t]
     angrm   = solver.whole.  angrm_of option[:t]
-    #aaggmm  = solver.whole. aaggmm_of option[:t]
+    angrm  -= anagram
     puts "anagram .. #{anagram.inspect}"
-    puts "angrm .... #{  angrm.inspect}"
-    #puts "aaggmm ... #{ aaggmm.inspect}"
+    puts "angrm+ ... #{  angrm.inspect}"
     puts
     array.concat anagram
     array.concat angrm
-    #array.concat aaggmm
   end
   array.unshift option[:t]
-  for w in array.uniq
+  for w in array
     game w, solver, true
   end
 else
+  if option[:o].nil?
+    option[:o] = "result.#{option[:i]}.yaml"
+  end
   if File.exist? option[:o]
     puts "file already exist: #{option[:o].inspect}"
     puts
@@ -111,6 +126,15 @@ else
   for word in solver.whole
     result[word] = game word, solver, option[:v]
   end
-  YAML.dump result, handle
+  YAML.dump sort_vk(result), handle
+
+  # chart
+  txt = text_bar_chart result.values
+  if option[:v]
+    puts txt
+  end
+  handle.puts
+  handle.puts txt.gsub(/^/, '# ')
+  handle.close
 end
 
