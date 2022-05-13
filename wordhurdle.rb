@@ -23,7 +23,7 @@ class WordHurdle
     @driver = Selenium::WebDriver.for :chrome
     @driver.manage.timeouts.implicit_wait = 10
     @driver.navigate.to @url
-    @driver.manage.window.resize_to 500, 760
+    @driver.manage.window.resize_to 500, 780
     game_area = @driver.find_element(:css, 'div.game_area')
     # get rows
     @game_row = game_area.find_elements(:css, 'div.wordhunt-row')
@@ -57,9 +57,7 @@ class WordHurdle
     puts "> #{word}"
 
     before = matrix.size
-    sleep 0.5
     enter word
-    sleep 0.5
     after = matrix.size
 
     if matrix.last.all?(&:invalid?) or before == after
@@ -70,6 +68,7 @@ class WordHurdle
       @solver.delete_from_dictionary word
       false
     else
+      sleep 0.1 while matrix.last.any? &:invalid?
       @solver.check matrix.last
       puts %Q`  #{@solver.progress.join('/')}`
       @solver.add_to_dictionary word
