@@ -26,13 +26,16 @@ class Wordle
     @driver.manage.window.resize_to 500, 800
     # click first x
     game_app = @driver.find_element(:tag_name, 'game-app').shadow_root
-    game_modal = game_app.find_element(:tag_name, 'game-modal').shadow_root
+    game_modal = game_app
+      .find_element(:css, 'game-theme-manager') # tag_nameだと何故か見つからない
+      .find_element(:css, 'div#game')
+      .find_element(:tag_name, 'game-modal').shadow_root
     close_icon = game_modal.find_element(:css, 'div.close-icon')
     if close_icon.displayed?
       close_icon.click
     end
     # get rows
-    @game_row = game_app.find_elements(:tag_name, 'game-row').map &:shadow_root
+    @game_row = game_app.find_elements(css:'game-row').map &:shadow_root
     self.inspect
   end
 
@@ -115,7 +118,7 @@ class Wordle
 
   def matrix
     @game_row.map do |r|
-      arr = r.find_elements(:tag_name, 'game-tile').map do
+      arr = r.find_elements(css:'game-tile').map do
         Tile.new(_1.attribute('letter'), _1.attribute('evaluation'))
       end
       arr.all?(&:empty?) ? nil : arr
