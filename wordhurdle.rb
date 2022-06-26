@@ -60,6 +60,8 @@ class WordHurdle
     enter word
     after = matrix.size
 
+    sleep 1.5
+
     if matrix.last.all?(&:invalid?) or before == after
       # It could be "Not enough letters"
       puts %Q`! Not in word list: #{word.inspect}`
@@ -68,7 +70,6 @@ class WordHurdle
       @solver.delete_from_dictionary word
       false
     else
-      sleep 0.1 while matrix.last.any? &:invalid?
       @solver.check matrix.last
       puts %Q`  #{@solver.progress.join('/')}`
       @solver.add_to_dictionary word
