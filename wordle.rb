@@ -25,17 +25,13 @@ class Wordle
     @driver.navigate.to @url
     @driver.manage.window.resize_to 500, 800
     # click first x
-    game_app = @driver.find_element(:tag_name, 'game-app').shadow_root
-    game_modal = game_app
-      .find_element(:css, 'game-theme-manager') # tag_nameだと何故か見つからない
-      .find_element(:css, 'div#game')
-      .find_element(:tag_name, 'game-modal').shadow_root
-    close_icon = game_modal.find_element(:css, 'div.close-icon')
+    close_icon = @driver.find_element xpath:'//*[@data-testid="icon-close"]'
     if close_icon.displayed?
       close_icon.click
     end
     # get rows
-    @game_row = game_app.find_elements(css:'game-row').map &:shadow_root
+    @game_row = @driver.find_elements xpath:'//*[@id="wordle-app-game"]/div[1]/div[1]/div'
+    ####game_app.find_elements(css:'game-row').map &:shadow_root
     self.inspect
   end
 
@@ -118,8 +114,15 @@ class Wordle
 
   def matrix
     @game_row.map do |r|
-      arr = r.find_elements(css:'game-tile').map do
-        Tile.new(_1.attribute('letter'), _1.attribute('evaluation'))
+      arr = r.find_elements(xpath:'div/div').map do |e|
+        if e.text.empty?
+          Tile.new nil, nil
+        else
+          until e.attribute('data-animation') == 'idle'
+            sleep 1
+          end
+          Tile.new e.text, e.attribute('data-state')
+        end
       end
       arr.all?(&:empty?) ? nil : arr
     end.compact

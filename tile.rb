@@ -43,6 +43,7 @@ class Tile
       when :absent, :black  then @color = :black
       when :present,:yellow then @color = :yellow
       when :correct,:green  then @color = :green
+      when :tbd             then @color = nil
       else
         raise "invalid color: #{o.inspect}"
       end
