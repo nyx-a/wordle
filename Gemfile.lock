@@ -1,9 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    nokogiri (1.13.10-arm64-darwin)
+    colorize (0.8.1)
+    mini_portile2 (2.8.1)
+    nokogiri (1.13.10)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    racc (1.6.1)
+    racc (1.6.2)
     rexml (3.2.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.7.1)
@@ -17,13 +20,14 @@ GEM
     websocket (1.2.9)
 
 PLATFORMS
-  arm64-darwin-21
+  arm64-darwin-22
 
 DEPENDENCIES
+  colorize
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.0p0
 
 BUNDLED WITH
-   2.3.8
+   2.4.1
