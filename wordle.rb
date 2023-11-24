@@ -24,11 +24,23 @@ class Wordle
     @driver.manage.timeouts.implicit_wait = 10
     @driver.navigate.to @url
     @driver.manage.window.resize_to 500, 800
-    # click first x
-    close_icon = @driver.find_element xpath:'//*[@data-testid="icon-close"]'
-    if close_icon.displayed?
-      close_icon.click
+
+    # click first "Play" button
+    play_button = nil
+    Selenium::WebDriver::Wait.new(timeout:15).until do
+      play_button = @driver.find_element xpath:'//button[@data-testid="Play"]'
+      play_button.displayed?
     end
+    play_button.click
+
+    # click first X in upper right corner
+    close_icon = nil
+    Selenium::WebDriver::Wait.new(timeout:15).until do
+      close_icon = @driver.find_element xpath:'//*[@data-testid="icon-close"]'
+      close_icon.displayed?
+    end
+    close_icon.click
+
     # get rows
     @game_row = @driver.find_elements xpath:'//*[@id="wordle-app-game"]/div[1]/div[1]/div'
     ####game_app.find_elements(css:'game-row').map &:shadow_root
@@ -118,8 +130,9 @@ class Wordle
         if e.text.empty?
           Tile.new nil, nil
         else
-          until e.attribute('data-animation') == 'idle'
-            sleep 1
+          wait = Selenium::WebDriver::Wait.new timeout:5
+          wait.until do
+            e.attribute('data-animation') == 'idle'
           end
           Tile.new e.text, e.attribute('data-state')
         end
